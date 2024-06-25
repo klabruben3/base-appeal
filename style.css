@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "JosefinSans";
+    src: url(./assets/JosefinSans/static/JosefinSans-Regular.ttf)
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "JosefinSans";
+}
+:root{
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish-red: hsl(0, 6%, 24%);
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+main{
+    width: 1161px;
+    height: 100vh;
+    background-image: url(./public/bg-pattern-desktop.svg);
+    
+    display: flex;
+}
+.content{
+    width: 669px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.content #logo{
+    position: absolute;
+    top: 53px;
+    left: 133px;
+}
+.content p:nth-child(2){
+    color: var(--dark-grayish-red);
+    font-size: 49px;
+    position: absolute;
+    top: 190px;
+    left: 135px;
+    letter-spacing: 10px;
+}
+.content p:nth-child(3){
+    color: var(--desaturated-red);
+    position: absolute;
+    left: 135px;
+    top: 374px;
+    line-height: 1.5;
+}
+.content span{
+    color: var(--desaturated-red);
+}
+input{
+    position: absolute;
+    top: 469px;
+    left: 133px;
+    border: 1px solid var(--desaturated-red);
+    height: 46px;
+    width: 358px;
+    border-radius: 23px;
+    outline: none;
+    background-color: transparent;
+    padding-left: 27px;
+    color: black;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 246px;
+}
+input::placeholder{
+    color: var(--desaturated-red)
+}
+button{
+    height: 46px;
+    width: 81px;
+    border-radius: 23px;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    position: absolute;
+    left: 411px;
+    top: 469px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -1px 1px 5px 0px var(--desaturated-red);
+}
+.content p:nth-child(5){
+    color: var(--soft-red);
+    position: absolute;
+    top: 533px;
+    left: 160px
+}
